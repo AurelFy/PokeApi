@@ -1,2 +1,80 @@
 @import 'utils/variables';
 @import 'components/type';
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(/assets/images/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    color: black;
+}
+
+h1 {
+    font-size: 90px;
+    font-family: 'Pokemon Solid', sans-serif;
+    color: yellow;  
+    -webkit-text-stroke: 2px  blue; 
+    letter-spacing: 12px;  
+    margin: 57px 0;                                       
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+.search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    margin: 0 30%;
+}
+
+.search>* {
+    margin-bottom: 20px;
+}
+
+.search--title {
+    font-family: 'Pokemon Solid', sans-serif;
+    letter-spacing: 3px;
+}
+
+.search--input {
+    border-radius: 20px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255, 0.5);
+    border: 2px solid black;
+    font-size: 20px;
+    width: 150px;
+}
+
+.search--input:focus {
+    outline: none;
+    border: 2px solid blue;
+}
+
+.search--btn {
+    width: 150px;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 2px solid yellow;
+    background-color: blue;
+    color: yellow;
+    transition: 0.5s;
+}
+
+.search--btn:hover {
+    border: 2px solid blue;
+    background-color: yellow;
+    color: blue;
+}
