@@ -12,20 +12,12 @@ var listElement = document.querySelector('.pokemon--type');
 
 var statsElement = document.querySelector('.pokemon--stat');
 
-var card = document.querySelector('.pokemon')
-
-
-
-
-    
-
-
-
-
-
+let card = document.querySelector('.pokemon'); 
 
 btn.addEventListener('click', function () {
 
+    card.classList.remove('pokemon--hidden'); 
+    
     var text = 'La valeur du champ est : ' + inputText.value; 
     console.log(text);
     // créer l'url qui correspond à la valeur du champs
@@ -57,3 +49,4 @@ btn.addEventListener('click', function () {
 
         });
 });
+
